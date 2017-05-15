@@ -1,0 +1,25 @@
+{
+  "name": "testingcordovaplugin",
+  "version": "0.0.2",
+  "description": "My first Plugin Testing",
+  "cordova": {
+    "id": "cordova-plugin-testingcordovaplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gopalakrishnakodimela/myfirstplugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "GopalaKrishna.K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gopalakrishnakodimela/myfirstplugin/issues"
+  },
+  "homepage": "https://github.com/Gopalakrishnakodimela/myfirstplugin#readme"
+}
