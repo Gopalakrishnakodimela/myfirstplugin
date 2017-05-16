@@ -8,11 +8,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class testingcordovaplugin extends CordovaPlugin {
-
+    private static final String actionCopy = "sayhello";
+    
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         
-        if (action.equals(" ")) {
+        if (action.equals(actionCopy)) {
             String message = args.getString(0);
             this.sayhello(message, callbackContext);
             return true;
