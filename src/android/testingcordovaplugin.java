@@ -1,4 +1,4 @@
-package cordova-plugin-testingcordovaplugin;
+package org.apache.cordova.plugin;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -12,7 +12,7 @@ public class testingcordovaplugin extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         
-        if (action.equals("sayhello")) {
+        if (action.equals(" ")) {
             String message = args.getString(0);
             this.sayhello(message, callbackContext);
             return true;
