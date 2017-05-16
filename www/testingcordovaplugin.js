@@ -1,6 +1,11 @@
-var exec = require('cordova/exec');
+var exec = require('cordova');
 
-exports.sayhello = function(param, success, error) {
-    exec(success, error, "testingcordovaplugin", "sayhello", [param]);
+function testingcordovaplugin () {}
+
+testingcordovaplugin.prototype.sayhello = function(text, success, fail) {
+    cordova.exec(success, fail, "testingcordovaplugin", "sayhello", [text]);
 };
 
+// Register the plugin
+var mycordovaplugin = new testingcordovaplugin();
+module.exports = mycordovaplugin;
